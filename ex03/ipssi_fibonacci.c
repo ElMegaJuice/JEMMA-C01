@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ipssi_recursive_factorial.c                        :+:      :+:    :+:   */
+/*   ipssi_fibonacci.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Emmanuel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/15 17:11:05 by Emmanuel          #+#    #+#             */
-/*   Updated: 2025/10/15 17:11:08 by Emmanuel         ###   ########.fr       */
+/*   Created: 2025/10/15 17:05:18 by Emmanuel          #+#    #+#             */
+/*   Updated: 2025/10/15 17:05:25 by Emmanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ipssi_recursive_factorial(int nb)
+int	ipssi_fibonacci(int index)
 {
-	int	facto;
-
-	if (nb == 0)
+	if (index < 0)
 	{
 		return (1);
 	}
-	else if (nb < 0)
-	{
-		return (0);
-	}
-	facto = nb * ipssi_recursive_factorial(nb - 1);
-	return (facto);
+	return (ipssi_fibonacci(index - 1) + ipssi_fibonacci(index - 2));
 }
