@@ -6,7 +6,7 @@
 /*   By: Emmanuel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:07:28 by Emmanuel          #+#    #+#             */
-/*   Updated: 2025/10/15 17:07:30 by Emmanuel         ###   ########.fr       */
+/*   Updated: 2025/10/15 17:22:35 by Emmanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,4 @@ int	ipssi_recursive_power(int nb, int power)
 	}
 	return (nb * ipssi_recursive_power(nb, power - 1));
 }
+//ne fonctionne pas
